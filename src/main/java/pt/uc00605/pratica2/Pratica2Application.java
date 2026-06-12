@@ -6,6 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 
+import pt.uc00605.pratica2.enums.Category;
+import pt.uc00605.pratica2.model.Course;
+import pt.uc00605.pratica2.model.Lesson;
+import pt.uc00605.pratica2.repository.CourseRepository;
+
 @SpringBootApplication
 public class Pratica2Application {
 
@@ -28,14 +33,14 @@ public class Pratica2Application {
 				// criando o 1º objeto lesson
 				Lesson lesson = new Lesson();
 				lesson.setName("Introdução ao Spring Boot" + i);
-				lesson.setYouTubeUrl("https://www.youtube.com/watch?v=oCEvr8OpY64" +i);
+				lesson.setYoutubeUrl("https://www.youtube.com/watch?v=oCEvr8OpY64" +i);
 				// adicionando uma lesson no objeto course
 				course.getLessons().add(lesson);
 
 				// criando o 2º objeto lesson2
 				Lesson lesson2 = new Lesson();
 				lesson2.setName("Introdução ao Spring Boot" + i);
-				lesson2.setYouTubeUrl("https://www.youtube.com/watch?v=oCEvr8OpY64" +i);
+				lesson2.setYoutubeUrl("https://www.youtube.com/watch?v=oCEvr8OpY64" +i);
 				// adicionando uma 2a lesson no objeto course
 				course.getLessons().add(lesson2);
 
